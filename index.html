@@ -6,6 +6,7 @@
         <title>Per Scholas: Members Site</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
         <script src="script.js"></script>
     </head>
     
@@ -20,7 +21,10 @@
                         <source srcset="images/logo_small.png" media="(max-width: 600px)">
                         <source srcset="images/logo_header.svg">
                         <img src="images/logo_header.svg" alt="Per Scholas Logo">
-                    </picture>      
+                    </picture>   
+            
+<!--                The two picture sources here make the image responsive. When the window goes below the 600px breakpoint, the photo rescales by sourcing from a smaller file.-->
+                
                 </div>
                 
                 <div id="topnav_right">
@@ -36,7 +40,13 @@
                         Password: <input type=password id="password" placeholder = "*******" pattern="\w{8}" title="8 character password" required>
                         <button type="button" onclick="login()">Log In</button>
                     </form><br>
+                
+<!--                    See login function on the script page. Since there is no back end server, the only function of the login at this point is to be a conditional control statement that redirects to the Userpage if the username is "kai@spiritkaizen.org" and the password is "spiritkaizen". That is the only username and password combination that works right now. Otherwise, an alert is thrown up saying that the username and password don't match.-->
+                    
                     <a href="register.html" class="register_link">Register for an Account.</a>
+                    
+<!--                    This link brings you to a register page with a mail form.-->
+                    
                     </div>
                 </div>
             </nav>
@@ -73,8 +83,10 @@
             
             <img src = "images/home_banner.jpg">
 
-<!--------- TO DO ---------
- Cite image source: CNN.
+<!------------------
+ This banner image is adapted from the following CNN story on Per Scholas: http://www.cnn.com/videos/cnnmoney/2017/07/07/job-training-program-at-risk-under-trump-budget.cnn 
+
+ ...and the Trump administration that threatens to cut funding to programs like CodeBridge. Boooooo!
 -->
             
             <h1>Let's make it work.</h1>
@@ -83,10 +95,6 @@
             key to thriving.</p>
             
             <a href="resources.html"><button type = "button"> See You In Success </button></a>
-            
-<!--------- TO DO ---------
- Create jQuery scroll-down button.
--->
             
         </section>
 
@@ -101,8 +109,21 @@
         </section>
 
 <!-- ========= Resources Buttons ========= -->
+    
+<!--        I created these icons on photoshop, to resemble the stye of the icons on the Per Scholas website.
         
         <section class = "resources_sections">
+            
+            <script>
+        
+        jQuery(window).scroll(function() {
+            if (jQuery(this).scrollTop() > 100) {
+                jQuery('.totop').stop().animate({ right: '0px' });
+            } else {
+                jQuery('.totop').stop().animate({ right: '-300px' });
+        }
+
+        </script>
          
             <!-- === Housing Modal === -->
             
@@ -207,7 +228,7 @@
             </div>
             
         </section>
-
+                
 <!-- ========= Footer ========= -->
         
         <footer>
