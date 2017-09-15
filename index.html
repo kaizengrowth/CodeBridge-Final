@@ -6,6 +6,7 @@
         <title>Per Scholas: Members Site</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="script.js"></script>
     </head>
     
     <body>
@@ -31,9 +32,9 @@
                     <a href="#close" title="Close" class="close">X</a>
                     <h2>Sign In</h2><br>
                     <form>
-                        Username: <input type="text" name="Username" value="Student"><br>
-                        Password: <input type=password placeholder = "*******" pattern="\w{8}" title="8 character password">
-                        <a href="user.html"><button type="button">Log In</button></a>
+                        Username: <input type="text" name="Username" id="username" value="Student" required><br>
+                        Password: <input type=password id="password" placeholder = "*******" pattern="\w{8}" title="8 character password" required>
+                        <button type="button" onclick="login()">Log In</button>
                     </form><br>
                     <a href="register.html" class="register_link">Register for an Account.</a>
                     </div>
@@ -117,13 +118,13 @@
                     <a href="#close" title="Close" class="close">X</a>
                     <h2>Help with Housing</h2><br><br>
                     <p>My landlord is trying to evict me.</p>
-                    <a href="#">Know your rights as a tenant. Get free or low-cost legal aid.</a><br><br>
+                    <a href="resources.html#housing">Know your rights as a tenant. Get free or low-cost legal aid.</a><br><br>
                     <p>I am behind on rent and need help with making payments.</p>
-                    <a href="#">Access short-term emergency funding for preventing homelessness.</a><br><br>
+                    <a href="resources.html#housing">Access short-term emergency funding for preventing homelessness.</a><br><br>
                     <p>I don't feel safe in my home.</p>
-                    <a href="#">Get help for domestic violence.</a><br><br>
+                    <a href="resources.html#housing">Get help for domestic violence.</a><br><br>
                     <p>I am homeless and in need of a place to sleep tonight.</p>
-                    <a href="#">Emergency shelter and homeless services. </a>
+                    <a href="resources.html#housing">Emergency shelter and homeless services. </a>
                 </div>
             </div>
             <br>
@@ -142,13 +143,13 @@
                     <a href="#close" title="Close" class="close">X</a>
                     <h2>Food and Income Support</h2><br><br>
                     <p>I can't afford to eat all the meals that I need to live healthfully.</p>
-                    <a href="#">Access SNAP Benefits and find food pantries in the city.</a><br><br>
+                    <a href="resources.html#food">Access SNAP Benefits and find food pantries in the city.</a><br><br>
                     <p>I can't afford a metrocard to come to class.</p>
-                    <a href="#">Sign up to receive a metrocard from Per Scholas</a><br><br>
+                    <a href="support.html">Sign up to receive a metrocard from Per Scholas</a><br><br>
                     <p>I need some help to cover basic living expenses right now.</p>
-                    <a href="#">Access Temporary Assistance.</a><br><br>
+                    <a href="resources.html#food">Access Temporary Assistance.</a><br><br>
                     <p>I am confused about my unemployment benefits.</p>
-                    <a href="#">Get support on navigating your unemployment benefits while at Per Scholas.</a>
+                    <a href="resources.html#food">Get support on navigating your unemployment benefits while at Per Scholas.</a>
                 </div>
             </div>
             
@@ -170,13 +171,13 @@
                     <a href="#close" title="Close" class="close">X</a>
                     <h2>Health & Counseling</h2><br><br>
                     <p>I don't have medical insurance.</p>
-                    <a href="#">Apply for medicaid and get help with medical bills.</a><br><br>
+                    <a href="resources.html#health">Apply for medicaid and get help with medical bills.</a><br><br>
                     <p>I need psychological support.</p>
-                    <a href="#">Connect with a free or low-cost mental health professional.</a><br><br>
+                    <a href="resources.html#health">Connect with a free or low-cost mental health professional.</a><br><br>
                     <p>I need disability services.</p>
-                    <a href="#">Get information on disability rights and services in NYC.</a><br><br>
-                    <p>I need long-term supportive housing.</p>
-                    <a href="#">Access supportive housing for disability.</a>
+                    <a href="resources.html#health">Get information on disability rights and services in NYC.</a><br><br>
+                    <p>I need long-term supportive housing for disability.</p>
+                    <a href="resources.html#housing">Access supportive housing for disability.</a>
                 </div>
             </div>
             <br>
@@ -195,13 +196,13 @@
                     <a href="#close" title="Close" class="close">X</a>
                     <h2>Community Orgs and Other Resources</h2><br><br>
                     <p>I need affordable childcare and/or elder care.</p>
-                    <a href="#">Find financial assistance for childcare and elder care.</a><br><br>
+                    <a href="resources.html#family">Find financial assistance for childcare and elder care.</a><br><br>
                     <p>I need a business suit for inverviews.</p>
-                    <a href="#">Access funds at Per Scholas for interview attire.</a><br><br>
+                    <a href="support.html">Access funds at Per Scholas for interview attire.</a><br><br>
                     <p>I have issues with immigration.</p>
-                    <a href="#">Connect to legal aid and immigration services.</a><br><br>
+                    <a href="resources.html#community">Connect to legal aid and immigration services.</a><br><br>
                     <p>I'd like to find out about other community resources.</p>
-                    <a href="#">Connect with other local organizations.</a>
+                    <a href="resources.html#community">Connect with other local organizations.</a>
                 </div>
             </div>
             
@@ -240,7 +241,7 @@
                 <a href="https://www.instagram.com/perscholas/"><img src="images/instagram.png" style="width: 52px"></a>
             </div>
             <br>
-
+            
         </footer>
         
     </body>

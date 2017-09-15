@@ -4,25 +4,13 @@
         <title>Per Scholas: Support Portal</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="script.js"></script>
         <style>
-            .slide_text {
-                position: relative;
-                bottom: 0;
-                left: 0;
-                width: 700px;
-                padding: 20px;
-                background: rgba(0,0,0,0.1);
-                z-index: 99;
-            }
-            .slide_text p {
-                padding-top: 25px;
-                font-size: 16px;
-                font-family: Arial;
-                color: #434343;
-            }
-            .slide_text button {
+            .Slideshow button {
                 background-color: #f68832;
-                padding: 10px 12px;
+                padding: 15px 40px;
+                font-size: 24px;
+                color: white;
                 border-radius: 5px;
             }
         </style>
@@ -52,7 +40,7 @@
                     <form>
                         Username: <input type="text" name="Username" value="Student"><br>
                         Password: <input type=password placeholder = "*******" pattern="\w{8}" title="8 character password">
-                        <a href="user.html"><button type="button">Log In</button></a>
+                        <a href="user.html"><button type="button" onclick="login()">Log In</button></a>
                     </form><br>
                     <a href="register.html" class="register_link">Register for an Account.</a>
                     </div>
@@ -98,36 +86,27 @@
         </section>
 
 <!-- ========= Teach to Learn Slideshow ========= -->
-        
+        <center>
         <section class = "Slideshow">
             <div id="slide 1" class="mySlides">
-                 <img src="images/pomodoro.jpg">
-                 <div class="slide_text">
-                     <h3>"ABC" - Log your hours.</h3>
-                     <p>"Always Be Coding" - when you graduate from Bootcamp, continue practicing daily by logging and setting the pomodoro timer in your profile. It takes around 10,000 hours of practice to reach mastery.</p>
-                 </div>
+                 <img src="images/slide1_pomodoro.jpg" style="width:90%">
             </div>
             <div id="slide 2" class="mySlides">
-                 <img src="images/mozilla.png">
-                <img src="images/OpenBadges.png">
+                 <img src="images/slide2_mozillabackpack.jpg"style="width:90%">
             </div>
             <div id="slide 3" class="mySlides">
-                <img src="images/OpenBadges_earn.png">
+                <img src="images/slide3_mozilladisplay.jpg" style="width:90%">
             </div>
             <div id="slide 4" class="mySlides">
-                <img src="images/OpenBadges_display.png">
+                <img src="images/slide_last.jpg" style="width:90%">
             </div>
-            <div id="slide 5" class="mySlides">
-                  <img src="images/AddtoLinkedIn.png">
-            </div>
-           
             <button class = "button" onclick = "plusDivs(-1)">&#10094;</button>
             
             <button class="button" onclick="plusDivs(+1)"> &#10095; </button>
         
         
         </section>
-
+</center>
 <!-- ========= Footer ========= -->
         
         <footer>

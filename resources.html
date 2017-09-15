@@ -6,6 +6,7 @@
         <title>Per Scholas: Support Portal</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="script.js"></script>
     </head>
     
     <body>
@@ -32,7 +33,7 @@
                     <form>
                         Username: <input type="text" name="Username" value="Student"><br>
                         Password: <input type=password placeholder = "*******" pattern="\w{8}" title="8 character password">
-                        <a href="user.html"><button type="button">Log In</button></a>
+                        <a href="user.html"><button type="button" onclick="login()">Log In</button></a>
                     </form><br>
                     <a href="register.html" class="register_link">Register for an Account.</a>
                     </div>
@@ -210,13 +211,16 @@
                 
             </div>
         </section>
+
+<!--The script below makes the accordion work by toggling the  "active" class state, and changing the next sibling element (the panel with the answer to the selected question) between display:block and display:none CSS properties. -->
     
         <script>
-            var acc = document.getElementsByClassName("accordion");
+                
+            var accordion = document.getElementsByClassName("accordion");
                 var i;
 
-            for (i = 0; i < acc.length; i++) {
-                acc[i].onclick = function(){
+            for (i = 0; i < accordion.length; i++) {
+                accordion[i].onclick = function(){
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
             if (panel.style.display === "block") {

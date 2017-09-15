@@ -4,9 +4,55 @@
         <title>Per Scholas: Support Portal</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="script.js"></script>
         <style>
-            .user_container {
+            table, th, td {
+                border: 1px solid gray;
                 margin: 15px;
+                padding: 10px;
+            }
+            h2 {
+                margin: 14px;
+                padding: 15px;
+            }
+            p {
+                font-size: 14px;
+            }
+            span {
+                font-size: 11px;
+            }
+            h5 {
+                color: #f68832;
+                font-size: 18px;
+            }
+            h6 {
+                color: #0079c0;
+            }
+            .user_container {
+                margin: 50px;
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                display: inline;
+            }
+            .user_info {
+                float: left;
+                display: inline-block;
+            }
+            .inbox {
+                flex: 1;
+                display: inline-block;
+            }
+            .user_info table {
+                width: 100%;
+                height: auto;
+            }
+            
+            .inbox table {
+                width: 760px;
+                height: auto;
             }
         </style>
     </head>
@@ -72,8 +118,92 @@
 
 <!-- ========= User Page ========= -->
 <div class="user_container">
-    <h2>User Page</h2>
     
+    <div class="user_info">
+        <h2>User Page</h2>
+        
+        <table>
+            <tr>
+                <th><h5>First Name</h5></th>
+                <td><p>Kai</p></td>   
+            </tr>
+            <tr>
+                <th><h5>Last Name</h5></th> 
+                <td><p>Zhang</p></td>
+            </tr>
+            <tr>
+                <th><h5>Per Scholas Year</h5></th> 
+                <td><p>2017</p></td>
+            </tr>
+            <tr>
+                 <th><h5>Cycle Number</h5></th>
+                 <td><p>18</p></td>
+            </tr>
+            <tr>
+                <th><h5>Email Address</h5x></th> 
+                <td><p>kai@spiritkaizen.org</p></td>
+            </tr>
+        </table>
+    </div>
+    
+    <img src="images/profile%20pic.png" style="width: 350px">
+        
+    <div class = "inbox">
+        <table>
+            <tr>
+                <td>
+                 <h2> Messages </h2>   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <h6>Hey Claire!</h6><span>9/3/17 6:53pm</span>
+                <p>I'd like to set up an appointment with you. I mentioned in my form the housing issues that I'm dealing with right now. I'm wondering if you could help me...</p>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                <h6 style="color:#76b7db;">Appointment Times</h6><span>9/4/17 9:01am</span>
+                <p>Thanks for taking the time to fill out the form. I hear what you're going through. How does next Tuesday at 2pm sound for you? I can come pull you out of class...</p>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                <h6>Referrals You Mentioned</h6>
+                <span>9/6/17 3:06pm</span>
+                <p>It was great to meet with you! Thanks for all the advice and direction you gave about my situation. Could you give me the name of that place you referred to me to again...</p>
+                </td> 
+            </tr>
+             <tr>
+                <td>
+                <h6 style="color:#76b7db;">Address and Contact</h6>
+                <span>9/6/17 3:15pm</span>
+                <p>Sure! Great to meet with you as well! Here's the contact info for the person I mentioned...</p>
+                </td> 
+            </tr>
+        </table>    
+    </div>
+</table>
+</div>
+    
+<div class = "inbox">
+    <table>
+            <tr>
+                <td>
+                 <h2> Resources and Referrals </h2>   
+                </td>
+            </tr>
+            <tr>
+                <td><p>Suggested sections...</p></td>
+            </tr>
+            <tr>
+                <td><p>Resources...</p></td>
+            </tr>
+            <tr>
+                <td><p>Contacts...</p></td>
+            </tr>
+    </table>
+                
 </div>
 
 <!-- ========= Footer ========= -->
@@ -91,9 +221,11 @@
                 <a href="support.html">Get Support.</a><br>
                 <a href="skills.html">Share Skills.</a><br>
                 <a href="network.html">Build Network.</a><br>
+<!--
                 <div id = "footer_copyright">
                 <p>By <a href="https://spiritkaizen.org">Kai Lin Zhang</a>, CodeBridge Cohort #6. <br>
                 Original <a href="https://perscholas.org">Per Scholas</a> website design by <a href="https://familiar-studio.com">Familiar</a>.</p>
+-->
             </div>
             </div>
             
