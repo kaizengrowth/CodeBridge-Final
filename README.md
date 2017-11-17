@@ -1,5 +1,13 @@
 # CodeBridge Final by Kai Zhang
 
+A student resource page built for Per Scholas social worker to more efficiently communicate social and financial resources. 
+
+I am building a full stack version of this site, with an intake form, login, student accounts and database, as my third project at General Assembly. In the meantime, here is what it looks like now: http://kaizen-final.bitballoon.com
+
+
+
+
+
 Before creating the website, surveys were conducted with students from Cohort 5 of Per Scholas. An in-depth interview was conducted with Claire Cuno, the social worker at Per Scholas, to inquire as to which services would be most pragmatically helpful for her. 
 
 Wireframes were created mainly by hand, and also digitally on wireframes.cc :
