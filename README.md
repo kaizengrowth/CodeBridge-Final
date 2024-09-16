@@ -1,4 +1,4 @@
-# CodeBridge Final by Kai Zhang
+# CodeBridge Final by Kai Lin Zhang
 
 A student resource page built for Per Scholas social worker to more efficiently communicate social and financial resources.
 
